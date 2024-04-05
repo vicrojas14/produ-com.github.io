@@ -1,0 +1,228 @@
+
+/* ============ Section galeria ============== */
+
+.section-galeria{
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0px 0px 24px 0px;
+    max-width: 100% !important;
+    display: block;
+}
+
+.section-galeria .container-fluid{
+    padding: 0px;
+}
+
+.section-galeria .title{
+    padding: 24px 14px 0px 14px;
+}
+
+.section-galeria .images .row,
+.section-galeria .images .col-md-12,
+.section-galeria .images .col-md-5,
+.section-galeria .images .col-md-7,
+.section-galeria .images .col-md-6 {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.section-galeria .images a:hover{
+    opacity: .8;
+}
+
+.section-galeria .images .img-big{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.section-galeria .images .img-medium{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.section-galeria .images .img-small{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.section-galeria .description{
+    padding: 40px 30px 20px 30px;
+}
+
+.section-galeria .description h4{
+    margin: 0px 0px 20px 0px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@media (max-width: 1100px){
+
+    .section-galeria .images .img-big{
+        height: 300px;
+    }
+    
+    .section-galeria .images .img-medium{
+        height: 200px;
+    }
+    
+    .section-galeria .images .img-small{
+        height: 100px;
+    }
+
+
+}
+
+@media (max-width: 992px){
+
+    .section-galeria{
+        margin: 0px 0px 15px 0px;
+    }
+
+    .section-galeria .title{
+        padding: 20px;
+    }
+
+    .section-galeria .images .img-big{
+        height: 250px;
+    }
+
+    .section-galeria .images .img-medium{
+        height: 240px;
+    }
+    
+    .section-galeria .images .img-small{
+        height: 120px;
+    }
+
+    .section-galeria .description{
+        padding: 30px 20px 20px 20px;
+    }
+
+
+}
+
+
+
+/* ============  Multimedia ============= */
+
+.sec-multimedia{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 24px 23px 24px;
+}
+
+.sec-multimedia .title a{
+    color: #ffffff;
+    font-size:16px;
+    font-weight: 600;
+    margin: 8px 0px 0px 20px;
+    display: inline-block;
+}
+
+.sec-multimedia .title input{
+    background-color: #1D1D1D;
+    font-size: 16px;
+    color: #ffffff;
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 100px;
+    padding-left: 20px;
+}
+
+.sec-multimedia .title input:focus{
+    border: 0px;
+    outline: none;
+    box-shadow: none;
+}
+
+.sec-multimedia .title button{
+    background-color: #1D1D1D;
+    font-size: 16px;
+    color: #ffffff;
+    border: 0px;
+    padding-left: 20px;
+    border-radius: 100px;
+}
+
+.sec-multimedia .title button:focus{
+    background-color: #ffcc00;
+    color: #000000;
+    outline: none;
+    border: none;
+}
+
+.sec-multimedia .title hr{
+    opacity: .4;
+    padding: 0px;
+    margin: 10px 0px 20px 0px;
+}
+
+
+@media (max-width: 992px){
+
+    .sec-multimedia{
+        background-color: #000000;
+        color: #ffffff;
+        padding: 30px 10px;
+    }
+
+
+    .sec-multimedia .title a{
+        font-size:14px;
+        margin: 0px 10px 0px 0px;
+    }
+
+    .sec-multimedia .title form{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .sec-multimedia .title hr{
+        opacity: .4;
+        padding: 0px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .sec-multimedia .section-submenu a{
+        font-size: 13px;
+        background-color: #000000;
+        padding: 5px 10px;
+        margin: 0px 0px 0px 0px;
+        border-radius: 100px;
+        font-weight: 500;
+    }
+
+}
+
+/* ============  Video ============= */
+
+.card-video-detail{
+    background-color: #151515;
+}
+
+
+/* ============ Video Relacionado ============= */
+
+.videos-relacionados{
+    padding: 30px 0px 0px 0px;
+}
+
+.videos-relacionados .no-margin{
+    padding: 0px
+}
+
+
+.videos-relacionados .card-relacionado{
+    margin: 0px 0px 0px 0px;
+}
+
+.videos-relacionados .card-relacionado .description{
+   background-color: #151515;
+   height: 100%;
+   padding: 24px;
+}

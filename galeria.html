@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="es">
+    <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon-show.ico" />
+        <title>PRODU</title>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/all.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/animate.css" >
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
+        <link rel="stylesheet" type="text/css" href="css/style.css" >
+        <link rel="stylesheet" type="text/css" href="css/slick.css"> 
+        <link rel="stylesheet" type="text/css" href="css/produ.css"> 
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">  
+        <link rel="stylesheet" type="text/css" href="css/grid-reticula.css">  
+        <link rel="stylesheet" type="text/css" href="css/galeria.css">  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css'>
+        <link rel="stylesheet" href="./css/carrusel.css">
+    </head>
+
+    <body>     
+        
+        <!-- Seccion principal -->
+        <div class="border-content">
+            <img src="images/banner-principal.png" alt="" class="img-full">
+
+            <!-- Header -->
+            <nav class="navbar navbar-default is-sticky-header" style="z-index: 3 !important;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-6 col-sm-6">
+                            <a href="index.html"><img src="images/logo-produ.png" alt="" id="logo-header"></a>
+                        </div>
+                        <div class="menu-visible-web">
+                            <div class="col-md-10 align-right">
+                                <div class="section-menu">
+                                    <!-- <a onclick="openNav()"><i class="fa-regular fa-bars"></i></a>-->
+                                    <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                                    <a href="buscador.html"><i class="fa-regular fa-search"></i></a>
+                                    <a href="">¿QUIÉNES SOMOS?</a>
+                                    <a href="">GRATIS</a>
+                                    <a href="">SUSCRÍBETE</a>
+                                    <h6>mié., 16 ago. 2023</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 menu-visible-mobil align-right">
+                            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                            <a href="buscador.html"><i class="fa-regular fa-search"></i></a>
+                            <a onclick="openNav()"><i class="fa-regular fa-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu-web-drop is-sticky-menu" style="z-index: 100 !important;">
+                <div class="dropdown border-purple1">
+                    <a href="categoria_television.html">Televisión</a>
+                </div>
+                <div class="dropdown border-blue">
+                    <a href="categoria_publicidad.html">Publicidad</a>
+                </div>
+                <div class="dropdown border-green1">
+                    <a href="categoria_tecnologia.html">Tecnología</a>
+                </div>
+                <div class="dropdown border-green2">
+                    <a href="">Sostenibilidad</a>
+                </div>
+                <div class="dropdown border-purple2">
+                    <a href="categoria_niños.html">Niños y animación</a>
+                </div>
+                <div class="dropdown border-purple1">
+                    <a href="categoria_paises.html">Países</a>
+                </div>
+                <div class="dropdown border-yellow">
+                    <a href="">English</a>
+                </div>
+                <div class="dropdown border-pink">
+                    <a href="">Who's who</a>
+                </div>
+                <div class="dropdown border-yellow">
+                    <a href="">Guía OTT</a>
+                </div>
+            </div>
+
+            <!-- Sidenav movil -->
+            <div id="mySidenav" class="sidenav menu-visible-mobil" style="z-index: 10;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+                <img src="images/logo-produ.png" alt="" class="logo">
+                <a href="">SUSCRÍBETE</a>
+                <a href="">GRATIS</a>
+                <a href="">¿QUIÉNES SOMOS?</a>
+                <h6>mié., 16 ago. 2023</h6>
+                <hr>
+                <div class="categorias">
+                    <a href="categoria_television.html" class="border-purple1">Televisión</a>
+                    <a href="categoria_publicidad.html" class="border-blue">Publicidad</a>
+                    <a href="categoria_tecnologia.html" class="border-green1">Tecnología</a>
+                    <a href="" class="border-green2">Sostenibilidad</a>
+                    <a href="categoria_niños.html" class="border-purple2">Niños y animación</a>
+                    <a href="categoria_paises.html" class="border-purple1">Países</a>
+                    <a href="" class="border-yellow">English</a>
+                    <a href="" class="border-pink">Who's who</a>
+                    <a href="" class="border-yellow">Guía OTT</a>
+                </div>
+            </div>
+
+            <!-- Galerias -->
+            <div class="sec-multimedia">
+                <div class="container-fluid">
+                    <div class="title">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h1 class="titulo-mega color-white">Galería</h1>
+                            </div>
+                            <div class="col-md-6 align-right-l">
+                                <a href="">todo</a>
+                                <a href="">television</a>
+                                <a href="">publicidad</a>
+                                <a href="">tecnología</a>
+                            </div>
+                            <div class="col-md-2">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-12">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-galeria">
+                    
+                        <div class="images">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <a href=""><div class="img-big" style="background-image: url(images/img.jpeg);"></div></a>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-6 col-xs-6">
+                                            <a href=""><div class="img-medium" style="background-image: url(images/img.jpeg);"></div></a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href=""><div class="img-small" style="background-image: url(images/img.jpeg);"></div></a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                            <a href=""><div class="img-small" style="background-image: url(images/img.jpeg);"></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="description bg-grey-osk">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <h2 class="titulo-principal color-white">21st Annual Hispanic Television Summit en Nueva York</h2>
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="color-white">La edición 21 de la Cumbre de la TV Hispana, organizado por Schramm Marketing Group y Future ( Multichannel News y B+C ), que por segundo año consecutivo se realiza en ETC.Venues de Madison Avenue en Nueva York, agrupó a ejecutivos de medios y agencias hispanas, de TV paga, TV abierta y streaming para discutir temas como la distribución de contenidos, la planificación de medios, el mercadeo y las promociones, además de discutir el ascenso del universo FAST</p>
+                                    <div class="social-media-white">
+                                        <a href=""><i class="fa fa-link-simple"></i></a>
+                                        <a href=""><i class="fa fa-envelope"></i></a>
+                                        <a href=""><i class="fab fa-facebook"></i></a>
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="videos-relacionados">
+                        <div class="row">
+                            <div class="col-xs-12 no-margin">
+                                <h3 class="titulo-bloque color-white">Más galerias</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-6 no-margin">
+                                <div class="card-relacionado line-tel">
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full"></a>
+                                    <div class="description">
+                                        <h5 class="tag-categoria">televisión</h5>
+                                        <h6 class="titulo-nota color-white">14 junio 2022</h6>
+                                        <a href=""><h4 class="titulo-nota color-white">Celebra la industria latina en los Premios PRODU 2021</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 no-margin">
+                                <div class="card-relacionado line-tel">
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full"></a>
+                                    <div class="description">
+                                        <h5 class="tag-categoria">televisión</h5>
+                                        <h6 class="titulo-nota color-white">14 junio 2022</h6>
+                                        <a href=""><h4 class="titulo-nota color-white">Celebra la industria latina en los Premios PRODU 2021</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 no-margin">
+                                <div class="card-relacionado line-tel">
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full"></a>
+                                    <div class="description">
+                                        <h5 class="tag-categoria">televisión</h5>
+                                        <h6 class="titulo-nota color-white">14 junio 2022</h6>
+                                        <a href=""><h4 class="titulo-nota color-white">Celebra la industria latina en los Premios PRODU 2021</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 no-margin">
+                                <div class="card-relacionado line-tel">
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full"></a>
+                                    <div class="description">
+                                        <h5 class="tag-categoria">televisión</h5>
+                                        <h6 class="titulo-nota color-white">14 junio 2022</h6>
+                                        <a href=""><h4 class="titulo-nota color-white">Celebra la industria latina en los Premios PRODU 2021</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 no-margin">
+                                <div class="card-relacionado line-tel">
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full"></a>
+                                    <div class="description">
+                                        <h5 class="tag-categoria">televisión</h5>
+                                        <h6 class="titulo-nota color-white">14 junio 2022</h6>
+                                        <a href=""><h4 class="titulo-nota color-white">Celebra la industria latina en los Premios PRODU 2021</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-6 no-margin">
+                                <div class="card-relacionado line-tel">
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full"></a>
+                                    <div class="description">
+                                        <h5 class="tag-categoria">televisión</h5>
+                                        <h6 class="titulo-nota color-white">14 junio 2022</h6>
+                                        <a href=""><h4 class="titulo-nota color-white">Celebra la industria latina en los Premios PRODU 2021</h4></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="content-grid banner-no-margin bg-black">
+                <div class="col-1272" >
+                    <div class="banner-1320x164">
+                        <img src="images/banners/1272x162.png" alt="">
+                    </div>
+                </div>
+            </div>
+        
+
+            
+
+        </div>
+        
+
+   
+      
+
+
+    	<!----------------- Java Script ---------------------->
+        <script type="text/javascript" src="js/jquey3.5.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js'></script>
+        <script  src="js/script.js"></script>
+
+        <!-- Animacion Scrooll -->
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+
+        <!-- Popover -->
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+            });
+        </script>
+
+        <!-- Tooltip -->
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+
+        <!-- Scroll top -->
+        <script type="text/javascript">
+            $('a.scroll').click(function(e){
+                e.preventDefault();
+                $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top-70}, 1000);
+            });
+        </script>
+
+        <!-- Sidenav -->
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+        <script>
+            const botonesFiltro = document.querySelectorAll('input[data-filtro]');
+            const elementos = document.querySelectorAll('.elemento');
+
+            botonesFiltro.forEach((boton) => {
+            boton.addEventListener('click', () => {
+                const filtro = boton.getAttribute('data-filtro');
+                
+                if (filtro === 'todos') {
+                elementos.forEach((elemento) => {
+                    elemento.style.display = 'block';
+                });
+                } else {
+                elementos.forEach((elemento) => {
+                    if (elemento.getAttribute('data-categoria') === filtro) {
+                    elemento.style.display = 'block';
+                    } else {
+                    elemento.style.display = 'none';
+                    }
+                });
+                }
+            });
+            });
+
+        </script>
+
+    <script>
+        const slider = tns({
+            "container": document.querySelector(".slider"),
+            "nav": false,
+            "autoplay": false,
+            "mouseDrag": true,
+            "swipeAngle": false,
+            "prevButton": '.prev',
+            "nextButton": '.next',
+            "gutter": 50,
+            "responsive": {
+            500: {
+                "items": 1
+            },
+            768: {
+                "items": 2
+            },
+            1101: {
+                "items": 4
+            }
+            }
+        });
+    </script>
+
+        
+
+    </body>
+
+</html>

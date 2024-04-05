@@ -1,0 +1,245 @@
+
+/* ==========  Reel Oro ============ */
+
+.card-reel-oro{
+    background-color: #ffffff;
+    margin: 24px 0px 24px 0px;
+    padding: 0px;
+}
+
+.card-reel-oro .no-m{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-reel-oro video{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-reel-oro iframe{
+    width: 100% !important;
+    height: 400px !important;
+}
+
+.card-reel-oro .info{
+    padding: 24px 40px 24px 40px;
+    color: #000000;
+}
+
+.card-reel-oro .info .social-media{
+    margin-bottom: 10px;
+}
+
+.card-reel-oro .info .btn-yellow{
+    background-color: #ffcc00;
+    color: #000000;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 10px 10px 0px 0px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: 1px solid #ffcc00;
+}
+
+.card-reel-oro .info .btn-yellow:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.card-reel-oro .info .btn-border{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 10px 10px 0px 0px;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+.card-reel-oro .info .btn-border:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+}
+
+@media (max-width: 1366px){
+
+    .card-reel-oro iframe{
+        height:400px !important;
+    }
+
+}
+
+@media (max-width: 1250px){
+
+    .card-reel-oro iframe{
+        height: 350px !important;
+    }
+
+}
+
+@media (max-width: 1090px){
+
+    .card-reel-oro iframe{
+        height: 300px !important;
+    }
+
+}
+
+@media (max-width: 1100px){
+
+    .card-reel-oro .col-res{
+        width: 100% !important;
+    }
+
+    .card-reel-oro iframe{
+        height: 340px !important;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .card-reel-oro iframe{
+        height: 400px !important;
+    }
+
+}
+
+@media (max-width: 700px){
+
+    .card-reel-oro iframe{
+        height: 380px !important;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .card-reel-oro iframe{
+        height: 250px !important;
+    }
+
+}
+
+
+
+@media (max-width: 1010px){
+
+    .card-reel-oro .info{
+        padding: 24px 20px 0px 30px;
+        color: #000000;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .card-reel-oro .info{
+        padding: 24px 20px 40px 30px;
+        color: #000000;
+    }
+
+}
+
+@media (max-width: 510px){
+
+    .card-reel-oro .info .btn-yellow{
+        width: 100% !important;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .card-reel-oro .info .btn-border{
+        width: 100% !important;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .card-reel-oro .info{
+        padding: 0px 20px 30px 20px;
+        color: #000000;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .card-reel-oro{
+        margin: 15px;
+    }
+
+}
+
+
+
+
+.card-more .controls{
+    text-align: right;
+    margin: 20px 0px 30px 0px;
+}
+
+.card-more  a{
+    color: #000000 !important;
+}
+
+.card-more  a:hover{
+    opacity: .8;
+}
+
+.card-more .controls i{
+    color: #000000;
+    font-size: 14px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    border: 1px solid #000000;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.card-more .controls i:hover{
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.card-more .controls i:focus{
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid #000000;
+    outline: none;
+}
+
+.card-more .titulo-nota{
+    margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 992px){
+
+    .card-more  .controls{
+        text-align: left;
+        margin: 20px 0px 30px 0px;
+    }
+
+    .card-more  .controls a{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    .card-more {
+        margin: 15px 15px 15px 15px;
+        padding: 30px 10px;
+    }
+
+}
+
+

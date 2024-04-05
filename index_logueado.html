@@ -1,0 +1,1506 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="es">
+    <head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon-show.ico" />
+        <title>PRODU</title>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/all.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/animate.css" >
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/banner.css">  
+        <link rel="stylesheet" type="text/css" href="css/slick.css"> 
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">  
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="css/grid-reticula.css">  
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/carrusel.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/buscador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css'>
+        <link rel="stylesheet" href="./css/carrusel.css">
+
+        <style>
+             
+        </style>
+    </head>
+
+    <script>
+        function toggleSearch() {
+            var input = document.getElementById("search-input");
+    
+            if (input.style.display === "none" || input.style.display === "") {
+                input.style.display = "inline-block";
+                input.focus();
+            } else {
+                input.style.display = "none";
+            }
+        }
+    
+        function buscar() {
+            var url = "buscador.html"; // Reemplaza esto con la URL que deseas abrir
+            window.open(url, "_self");
+        }
+    </script>
+
+    <script>
+        function toggleSearch2() {
+            var input = document.getElementById("search-input2");
+
+            if (input.style.display === "none" || input.style.display === "") {
+                input.style.display = "inline-block";
+                input.focus2();
+            } else {
+                input.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        var icono = document.getElementById("miIcono");
+
+        icono.addEventListener("click", function() {
+            if (icono.classList.contains("fa-search")) {
+                icono.classList.remove("fa-search");
+                icono.classList.add("fa-times", "icono-activo");
+            } else {
+                icono.classList.remove("fa-times", "icono-activo");
+                icono.classList.add("fa-search");
+            }
+        });
+    </script>
+
+    <body>     
+        
+        <!-- Seccion principal -->
+        <div class="border-content">
+            <img src="images/banners/1320x164.png" alt="" class="img-full">
+
+            <!-- Header -->
+            <nav class="navbar navbar-default is-sticky-header" style="z-index: 3 !important;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-3 col-sm-3 pad-none">
+                            <a href="index.html"><img src="images/PRODU35LOGO.png" alt="" id="logo-header"></a>
+                        </div>
+                        <div class="menu-visible-web">
+                            <div class="col-md-9 align-right">
+                                <div class="section-menu">
+                                    <!-- <a onclick="openNav()"><i class="fa-regular fa-bars"></i></a>-->
+                                    <div class="item-logueo">
+                                        <div class="dropdown" style="z-index: 200 !important;">
+                                            <button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="images/perfil.png" alt=""><h6>Victor Rojas</h6>
+                                            <span class="caret"></span></button>
+                                            <ul class="dropdown-menu" style="z-index: 200 !important;">
+                                              <li><a href="#">Cerrar Sesión</a></li>
+                                              <li><a href="#">Editar</a></li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    <div id="search-container">
+                                        <div id="search-input">
+                                            <input type="text"  placeholder="Buscar..." >
+                                            <button class="btn-bus-web">Ir</button>
+                                        </div>
+                                        <a id="search-btn" onclick="toggleSearch()"><i class="fa-regular fa-search"></i></a>
+                                    </div>
+                                    <a href="">¿QUIÉNES SOMOS?</a>
+                                    <a href="">GRATIS</a>
+                                    <a href="">SUSCRÍBETE</a>
+                                    <h6>mié., 16 ago. 2023</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-9 menu-visible-mobil align-right" >
+                            <div class="mobil-items">
+                                <a onclick="openNav()"><i class="fa-regular fa-bars"></i></a>
+                                <div id="search-container">
+                                    <div id="search-input2">
+                                        <input type="text"  placeholder="Buscar..." class="input-bus-movil" >
+                                        <button class="btn-bus-movil">Ir</button>
+                                    </div>
+                                    <a id="search-btn2" onclick="toggleSearch2()"><i class="fa-regular fa-search" id="miIcono"></i></a>
+                                </div>
+                                <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- megamenu 
+            <div class="menu-web-drop is-sticky-menu" style="z-index: 100 !important;">
+                <div class="dropdown border-purple1">
+                    <a href="categoria_television.html">Televisión</a>
+                </div>
+                <div class="dropdown border-blue">
+                    <a href="categoria_publicidad.html">Publicidad</a>
+                </div>
+                <div class="dropdown border-green1">
+                    <a href="categoria_tecnologia.html">Tecnología</a>
+                </div>
+                <div class="dropdown border-green2">
+                    <a href="">Sostenibilidad</a>
+                </div>
+                <div class="dropdown border-purple2">
+                    <a href="categoria_niños.html">Niños y animación</a>
+                </div>
+                <div class="dropdown border-purple1">
+                    <a href="categoria_paises.html">Países</a>
+                </div>
+                <div class="dropdown border-yellow">
+                    <a href="">English</a>
+                </div>
+                <div class="dropdown border-pink">
+                    <a href="">Who's who</a>
+                </div>
+                <div class="dropdown border-yellow">
+                    <a href="">Guía OTT</a>
+                </div>
+            </div>-->
+
+            <nav class="menu-web-drop is-sticky-menu">
+                <ul class="">
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-purple1" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Televisión</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-tel">Televisión</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-blue" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publicidad</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-pub">Publicidad</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-green1" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tecnología</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-tec">Tecnología</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-green2" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sostenibilidad</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-sos">Sostenibilidad</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-purple2" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Niños y Animación</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-ninos">Niños y Animación</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-purple1" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Países</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-pais">Países</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-yellow" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-produ">English</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-pink" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Who's who</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-ww">Who's who</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown megamenu-li">
+                        <a class="nav-link dropdown-toggle border-yellow" href="" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Guía OTT</a>
+                        <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="color-produ">Guía OTT</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3 border-right">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                                <div class="col-md-3">
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                    <a href=""><h5>Submenu</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        
+            <!-- Sidenav movil -->
+            <div id="mySidenav" class="sidenav menu-visible-mobil" style="z-index: 10;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+                <img src="images/logo-produ.png" alt="" class="logo">
+                <a href="">SUSCRÍBETE</a>
+                <a href="">GRATIS</a>
+                <a href="">¿QUIÉNES SOMOS?</a>
+                <h6>mié., 16 ago. 2023</h6>
+                <hr>
+                <div class="categorias">
+                    <a href="categoria_television.html" class="border-purple1">Televisión</a>
+                    <a href="categoria_publicidad.html" class="border-blue">Publicidad</a>
+                    <a href="categoria_tecnologia.html" class="border-green1">Tecnología</a>
+                    <a href="" class="border-green2">Sostenibilidad</a>
+                    <a href="categoria_niños.html" class="border-purple2">Niños y animación</a>
+                    <a href="categoria_paises.html" class="border-purple1">Países</a>
+                    <a href="" class="border-yellow">English</a>
+                    <a href="" class="border-pink">Who's who</a>
+                    <a href="" class="border-yellow">Guía OTT</a>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="content-grid banner-no-margin">
+                <div class="col-1272" >
+                    <div class="banner-1320x164">
+                        <img src="images/banners/1272x82.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Principal -->
+            <div class="content-grid">
+                <div class="col-624">
+                    <a href=""><img src="images/img.jpeg" alt="" class="img-full"></a>
+                    <!-- Card Principal -->
+                    <div class="card line-tel">
+                        <h5 class="tag-categoria">televisión</h5>
+                        <div class="h-txt-prin">
+                            <a href=""><h1 class="titulo-principal">PUNTO DE VISTA- Director Alejandro Lozano: Ahora hay un mayor cuidado en la producción porque compites contra todo el mundo</h1></a>
+                            <p>Para un realizador como Alejandro Lozano de Lemon Studios, el apoyo que están dando plataformas de streaming como ViX a películas originales “es increíble, porque antes, la primera ventana era forzosamente el cine, y lograr hacer una película era un verdadero lujo” expresa. Lozano agrega que gracias al apoyo de las plataformas de generar contenidos, películas y apostarle a ese formato, finalmente la gente ya puede tener acceso a películas...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-300">
+                    <!-- Card Bloque de foto -->
+                    <div class="card line-pub height-card-2">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <h3 class="titulo-bloque">EDICIÓN 38 </h3>
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                    <div class="h-txt-sec">
+                                        <a href=""><h4 class="titulo-nota">Productora y actriz Karla Souza: Existe un 24% de mujeres directoras en la industria pero buscamos que esa cifra crezca</h4></a>
+                                        <p>La actriz y productora Karla Souza estuvo presente en la edición 38 del FICG, en donde participó en dos paneles, uno como parte de la incubadora de talentos de Moët & Chandon y en la masterclass “Mujeres en el cine”, además de presentar su película La caída en...</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <h3 class="titulo-bloque ">TÍA ALISON: ASÍ SE CREÓ LA NUEVA SERIE DE RCN</h3>
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                    <div class="h-txt-sec">
+                                        <a href=""><h4 class="titulo-nota">Juliette Pardau, protagonista de Tía Alison: Es una historia que tiene drama, comedia, suspenso, intrigas y romance</h4></a>
+                                        <p>La edición 21 de la Cumbre de la TV Hispana, organizado por Schramm Marketing Group y Future ( Multichannel News y B+C ), que por segundo año consecutivo se realiza en ETC.Venues de Madison Avenue en Nueva York, agrupó a ejecutivos de medios y agencias hispanas, de TV paga.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <a href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                            <h6><a href="">ver todos</a></h6>
+                            <a href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-300">
+                    <!-- Rel de Oro -->
+                    <div class="card line-pub">
+                        
+                        <div id="carruselPersonajeSemana" class="carousel slide" data-ride="carousel" >
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <h5 class="tag-categoria">televisión</h5>
+                                    <h4 class="titulo-bloque">REEL DE ORO</h4>
+                                    <div class="h-txt-ter">
+                                        <h3 class="titulo-nota">Plan (9) de Altered.LA: Queremos colaborar con marcas que estén dispuestas a romper barreras </h3>
+                                    </div>
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                </div>
+                                <div class="item">
+                                    <h5 class="tag-categoria">televisión</h5>
+                                    <h4 class="titulo-bloque">REEL DE ORO</h4>
+                                    <div class="h-txt-ter">
+                                        <h3 class="titulo-nota">Plan (9) de Altered.LA: Queremos colaborar con marcas que estén dispuestas a romper barreras </h3>
+                                    </div>
+                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <a href="#carruselPersonajeSemana" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                <a href="#carruselPersonajeSemana" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="banner-300 align-center">
+                        <img src="images/banners/300x300.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="content-grid banner-no-margin">
+                <div class="col-1272" >
+                    <div class="banner-1320x164">
+                        <img src="images/banners/1272x162.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seccion Secundaria-->
+            <div class="content-grid">
+                <div class="col-300 is-sticky-1">
+                    <!-- Lo ultimo -->
+                    <div class="card line-tel">
+                        <h3 class="titulo-bloque">Lo último</h3>
+                        <h5 class="tag-categoria">televisión</h5>
+                        <h4 class="titulo-nota"><a href="">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</a></h4>
+                        <hr>
+                        <h5 class="tag-categoria">televisión</h5>
+                        <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</h4></a>
+                        <hr>
+                        <h5 class="tag-categoria">televisión</h5>
+                        <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</h4></a>
+                    </div>
+                    <div class="banner-300 align-center">
+                        <img src="images/banners/300x300.png" alt="">
+                    </div>
+                </div>
+                <div class="col-948">
+                    <div class="col-int">
+                        <div class="col-624-int-l">
+                            <!-- Destacada television -->
+                            <div class="card card-horizontal line-tel">
+                                <a href=""><img src="images/img.jpeg" alt=""></a>
+                                <div class="info">
+                                    <h5 class="tag-categoria">televisión</h5>
+                                    <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</h4></a>
+                                </div>
+                            </div>
+                            <!-- Destacada publicidad -->
+                            <div class="card card-horizontal line-pub">
+                                <a href="">
+                                    <div class="img-video">
+                                        <img src="images/img.jpeg" alt="">
+                                        <img src="images/ic-play.png" alt="" class="ic-play">
+                                    </div>
+                                </a>
+                                <div class="info">
+                                    <h5 class="tag-categoria">televisión</h5>
+                                    <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet </h4></a>
+                                </div>
+                            </div>
+                            <!-- Destacada tecnologia -->
+                            <div class="card card-horizontal line-tec">
+                                <a href=""><img src="images/img.jpeg" alt=""></a>
+                                <div class="info">
+                                    <h5 class="tag-categoria">televisión</h5>
+                                    <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</h4></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-300-int-r">
+                            <!-- Card opinion -->
+                            <div class="card line-pub">
+                                <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                            <h5 class="tag-categoria">publicidad</h5>
+                                            <h3 class="titulo-bloque">opinión</h3>
+                                            <a href=""><p>Héctor Moncada, escritor de Tía Alison: Nace de la necesidad de contar una historia con un personaje que no se ha explorado mucho</p></a>
+                                        </div>
+                                        <div class="item">
+                                            <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                            <h5 class="tag-categoria">publicidad</h5>
+                                            <h3 class="titulo-bloque">opinión</h3>
+                                            <a href=""><p>Héctor Moncada, escritor de Tía Alison: Nace de la necesidad de contar una historia con un personaje que no se ha explorado mucho</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls align-center">
+                                    <a href="#myCarousel2" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                    <a href="#myCarousel2" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-int">
+                        <div class="col-948-int">
+                            <!-- Noticias -->
+                            <div class="card card-noticias heigth-auto">
+                                <div class="title-filter">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <h2 class="titulo-bloque">noticias</h2>
+                                            <div class="controls">
+                                                <a href="#carruselnoticias1" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                                <a href="#carruselnoticias1" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 filter">
+                                            
+                                            <input type="button" class="hover-tel" data-filtro="television" value="Televisión">
+                                            <input type="button" class="hover-pub"  data-filtro="publicidad" value="Publicidad">
+                                            <input type="button" class="hover-tec"  data-filtro="tecnologia" value="Tecnología">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="carruselnoticias1" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Noticias -->
+                            <div class="card card-noticias heigth-auto">
+                                <div class="title-filter">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                            <h2 class="titulo-bloque">noticias</h2>
+                                            <div class="controls">
+                                                <a href="#carruselnoticias2" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                                <a href="#carruselnoticias2" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 filter">
+                                            
+                                            <input type="button" class="hover-tel" data-filtro="television" value="Televisión">
+                                            <input type="button" class="hover-pub"  data-filtro="publicidad" value="Publicidad">
+                                            <input type="button" class="hover-tec"  data-filtro="tecnologia" value="Tecnología">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div id="carruselnoticias2" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                                <div class="col-md-4 col-sm-6 col-xs-6">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel) Dago García de Caracol: ya tiene protagonista para biopic de Vicente (tel)
+                                                        a tiene protagonista para biopic de Vicente (tel) </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-int">
+                        <div class="col-624-int-l">
+                            <div class="banner-672">
+                                <img src="images/banners/624x162.png" alt="" class="img-full">
+                            </div>
+                            <!-- Bloque de fotos vertical-->
+                            <div class="card heigth-auto line-pub">
+                                <h5 class="tag-categoria">tecnología</h5>
+                                <h2 class="titulo-bloque">bloque de fotos</h2>
+                                <div id="myCarousel4" class="carousel slide visible-lg visible-md visible-sm" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="row ">
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota ">Juancho y Manolo Cardona 11:11de Films & TV: Nuestra filosofía es hacer las cosas bien con procesos eficientes, de calidad y transparencia en el manejo de recursos</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui libero eveniet, accusantium nesciunt incidunt beatae animi culpa quae magni, adipisci velit aliquam inventore. Suscipit officiis, corrupti totam expedita in aliquid.</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row ">
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls align-center visible-lg visible-md visible-sm pad-t-24">
+                                    <a href="#myCarousel4" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                    <h6>ver más</h6>
+                                    <a href="#myCarousel4" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+                                <div class="row visible-xs">
+                                    <div class="col-md-12">
+                                        <div id="myCarousel5" class="carousel slide" data-ride="carousel" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="item">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                     <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls align-center visible-xs">
+                                    <a href="#myCarousel5" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                    <h6>ver más</h6>
+                                    <a href="#myCarousel5" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <!-- Bloque de fotos vertical-->
+                            <div class="card heigth-auto line-pub" style="margin-bottom: 0px !important;">
+                                <h5 class="tag-categoria">tecnología</h5>
+                                <h2 class="titulo-bloque">bloque de fotos</h2>
+                                <div id="myCarousel" class="carousel slide visible-lg visible-md visible-sm" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="row ">
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota ">Juancho y Manolo Cardona 11:11de Films & TV: Nuestra filosofía es hacer las cosas bien con procesos eficientes, de calidad y transparencia en el manejo de recursos</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui libero eveniet, accusantium nesciunt incidunt beatae animi culpa quae magni, adipisci velit aliquam inventore. Suscipit officiis, corrupti totam expedita in aliquid.</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="row ">
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls align-center visible-lg visible-md visible-sm pad-t-24">
+                                    <a href="#myCarousel4" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                    <h6>ver más</h6>
+                                    <a href="#myCarousel4" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+                                <div class="row visible-xs">
+                                    <div class="col-md-12">
+                                        <div id="myCarousel5" class="carousel slide" data-ride="carousel" data-interval="false">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                    <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                                <div class="item">
+                                                    <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                                     <h4 class="titulo-nota">Dago García de Caracol: ya tiene protagonista para biopic de Vicente Fernández</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="controls align-center visible-xs">
+                                    <a href="#myCarousel5" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                    <h6>ver más</h6>
+                                    <a href="#myCarousel5" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-300-int-r">
+                            <div class="banner300-600 align-center">
+                                <img src="images/banners/300x600.png" alt="">
+                            </div>
+                            <div class="banner300-600 align-center">
+                                <img src="images/banners/300x600.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="content-grid banner-no-margin">
+                <div class="col-1272" >
+                    <div class="banner-1320x164">
+                        <img src="images/banners/1272x162.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prime time -->
+            <div class="content-grid">
+                <div class="col-1272" >
+                    <!-- Produ prime time con Richard-->
+                    <div class="card bg-black pad-48">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 class="tag-categoria color-white">televisión</h5>
+                                <h3 class="titulo-mega color-white strong-yellow pad-b-24">#PRODUprimetime CON <strong>RÍCHARD IZARRA</strong></h3>
+                            </div>
+                        </div>
+                        <div class="row prime-t-row">
+                            <div class="col-md-7">
+                                <a href="https://fresh.produ.com/television/videos/patricio-wills-de-w-studios-con-el-gallo-de-oro-tenemos-un-producto-muy-grande-serio-y-de-proyeccin-mundial/">
+                                    <img src="https://imageswp.produ.com/wp-content/uploads/2023/10/31094159/bigwp-PatricioWillsProduPrimetime.jpg" data-src="https://imageswp.produ.com/wp-content/uploads/2023/10/31094159/bigwp-PatricioWillsProduPrimetime.jpg" alt="" class="img-full img-m-b lazy loaded" data-was-processed="true">
+                                </a>
+                                <h2 class="titulo-principal color-white">#PRODUprimetime con Carolina Rivera y Fernando Sariñana</h2>
+                            </div>
+                            <div class="heigth-auto col-md-5  col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6 card-wrap">
+                                        <a href=""><img src="images/produ-primetime-more.png" alt="" class="img-full img-m-b"></a>
+                                        <a href=""><h5 class="titulo-nota color-white">#PRODUprimetime desde República Dominicana con Guillermo Asencio de Grupo Corripio encio de Grupo Corripio</h5></a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <a href=""><img src="images/produ-primetime-more.png" alt="" class="img-full img-m-b"></a>
+                                        <a href=""><h5 class="titulo-nota color-white">#PRODUprimetime desde República Dominicana con</h5></a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <a href=""><img src="images/produ-primetime-more.png" alt="" class="img-full img-m-b"></a>
+                                        <a href=""><h5 class="titulo-nota color-white">#PRODUprimetime desde República Dominicana con Guillermo Asencio de Grupo Corripio encio de Grupo Corripio</h5></a>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <a href=""><img src="images/produ-primetime-more.png" alt="" class="img-full img-m-b"></a>
+                                        <a href=""><h5 class="titulo-nota color-white">#PRODUprimetime desde República Dominicana con Guillermo Asencio de Grupo Corripio encio de Grupo Corripio</h5></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Primetime segmentados-->
+                    <div class="card bg-image" style="background-image: url(images/bg.png);">
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <h5 class="tag-categoria">televisión</h5>
+                                <h2 class="titulo-mega pad-b-24 color-white strong-yellow">#PRODUprimetime <strong>Segmentados</strong></h2>
+                            </div>
+                        </div>
+                        <div class="row prime-t-row">
+                            <div class="col-md-7">
+                                <a href=""><img src="images/produ-primetime.png" alt="" class="img-full img-m-b"></a>
+                                <h3 class="titulo-nota color-white">Marcos Santana presenta su nueva empresa</h3>
+                                <div class="visible-sm visible-xs">
+                                    <h4 class="titulo-principal color-white">Marcos Santana presenta su nueva empresa Mas Ros Media (entrevista extendida)
+                                    </h4>
+                                    <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris</p>
+                                    <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris</p>
+                                
+                                </div>
+                                <a data-toggle="collapse" data-target="#capitulos" class="titulo-bloque color-white pad-b-24"><i class="fa fa-plus-circle pad-b-24"></i> Ver capitulos</a>
+                                <div id="capitulos" class="collapse">
+                                    <a href="" class="titulo-nota color-white">1. Capitulo 1</a>
+                                    <hr>
+                                    <a href="" class="titulo-nota color-white">2. Capitulo 2</a>
+                                    <hr>
+                                    <a href="" class="titulo-nota color-white">3. Capitulo 3</a>
+                                    <hr>
+                                    <a href="" class="titulo-nota color-white">4. Capitulo 4</a>
+                                    <hr>
+                                    <a href="" class="titulo-nota color-white">5. Capitulo 5</a>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="col-md-5 visible-lg visible-md">
+                                <h4 class="titulo-principal color-white">Marcos Santana presenta su nueva empresa Mas Ros Media (entrevista extendida)
+                                </h4>
+                                <p class="text-popins color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris</p>
+                                <p class="text-popins color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="content-grid banner-no-margin">
+                <div class="col-1272" >
+                    <div class="banner-1320x164">
+                        <img src="images/banners/1272x162.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="content-grid">
+                <div class="col-300 is-sticky-1">
+                    <div class="card heigh-visto line-tel">
+                        <h3 class="titulo-bloque">Lo más visto</h3>
+                        <h5 class="tag-categoria">televisión</h5>
+                        <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</h4></a>
+                        <hr>
+                        <h5 class="tag-categoria">televisión</h5>
+                        <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</h4></a>
+                        <hr>
+                        <h5 class="tag-categoria">televisión</h5>
+                        <a href=""><h4 class="titulo-nota">Marcos Duarte de HughesNet México: Ya conectamos a la Cruz Roja en Chilpancingo y Acapulco, y seguiremos instalando puntos de acceso a Internet</h4></a>
+                    </div>
+                </div>
+                <div class="col-948">
+                    <!-- Videos -->
+                    <div class="card card-video line-pub">
+                        <h5 class="tag-categoria">publicidad</h5>
+                        <h2 class="titulo-bloque">Videos</h2>
+                        <div class="videos">
+                            <div class="row prime-t-row">
+                                <div class="col-md-9">
+                                    <img src="images/img.jpeg" alt="" class="img-full img-m-b">
+                                    <h4 class="titulo-principal">#PRODUprimetime con Sebastián Jiménez de JK Media Group</h4>
+                                    <p>Tras la pandemia, las marcas implementaron modelos de comercio electrónico que ahora exigen más y mejor creatividad ¿Cuáles son las variables creativas que debe tener en cuenta una marca cuando busca posicionar su e-commerce ?</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="row wid-50">
+                                        <div class="col-md-12 col-sm-6 col-xs-6">
+                                            <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                            <a href=""><h6 class="titulo-nota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, est fuga iure commodi maiores consequunt aspernatur</h6></a>
+                                        </div>
+                                        <div class="col-md-12 col-sm-6 col-xs-6">
+                                            <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                                            <a href=""><h6 class="titulo-nota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, est fuga iure commodi maiores consequunt aspernatur</h6></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="content-grid banner-no-margin">
+                <div class="col-1272" >
+                    <div class="banner-1320x164">
+                        <img src="images/banners/1272x162.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galeria -->
+            <div class="content-grid">
+                <div class="col-1272" >
+                    <div class="section-galeria">
+                        <div class="container-fluid">
+                            <div class="title">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="tag-categoria">televisión</h5>
+                                        <h2 class="titulo-bloque color-white">Galería</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="images">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <a href=""><div class="img-big" style="background-image: url(images/img.jpeg);"></div></a>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-6 col-xs-6">
+                                                <a href=""><div class="img-medium" style="background-image: url(images/img.jpeg);"></div></a>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <a href=""><div class="img-small" style="background-image: url(images/img.jpeg);"></div></a>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <a href=""><div class="img-small" style="background-image: url(images/img.jpeg);"></div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <h2 class="titulo-principal color-white">21st Annual Hispanic Television Summit en Nueva York</h2>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                        <p class="color-white">La edición 21 de la Cumbre de la TV Hispana, organizado por Schramm Marketing Group y Future ( Multichannel News y B+C ), que por segundo año consecutivo se realiza en ETC.Venues de Madison Avenue en Nueva York, agrupó a ejecutivos de medios y agencias hispanas, de TV paga, TV abierta y streaming para discutir temas como la distribución de contenidos, la planificación de medios, el mercadeo y las promociones, además de discutir el ascenso del universo FAST</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="content-grid banner-no-margin">
+                <div class="col-1272" >
+                    <div class="banner-1320x164">
+                        <img src="images/banners/1272x162.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="col-948 is-sticky-1">
+                    <!-- Newsletter -->
+                    <div class="card section-newsletter line-pro">
+                        <h3 class="titulo-bloque">Newsletter</h3>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>14 Enero 2022</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <h4 class="titulo-bloque">lunes 21</h4>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <a href="" class="btn btn-line">Ir al diario</a>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <h4 class="titulo-bloque">martes 22</h4>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <a href="" class="btn btn-line">Ir al diario</a>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12">
+                                <h4 class="titulo-bloque">miercoles 23</h4>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <div class="items-horiz">
+                                    <a href=""><img src="images/img.jpeg" alt=""></a>
+                                    <h5 class="titulo-nota overflow-ellipsis-1">Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño Ramiro Caffaro de Hogarth: UX y los orígenes del Diseño</h5>
+                                </div>
+                                <a href="" class="btn btn-line">Ir al diario</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-300">
+                    <div class="card line-pro">
+                        <img src="images/logo-noticia.png" alt="" class="img-m-b">
+                        <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                        <a href=""><h4 class="titulo-nota">Actor y director Salvador del Solar: Perú ha avanzado, pero se puede avanzar más</h4></a>
+                        <p>Actor y director Salvador del Solar: Perú ha avanzado, pero se puede avanzar más</p>
+                        <hr>
+                        <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                        <a href=""><h4 class="titulo-nota">Actor y director Salvador del Solar: Perú ha avanzado, pero se puede avanzar más</h4></a>
+                        <p>Actor y director Salvador del Solar: Perú ha avanzado, pero se puede avanzar más</p>
+                        <hr>
+                        <a href=""><img src="images/img.jpeg" alt="" class="img-full img-m-b"></a>
+                        <a href=""><h4 class="titulo-nota">Actor y director Salvador del Solar: Perú ha avanzado, pero se puede avanzar más</h4></a>
+                        <p>Actor y director Salvador del Solar: Perú ha avanzado, pero se puede avanzar más</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner -->
+            <div class="">
+                <div class="">
+                    <div class="footer">
+                        <div class="container-fluid" >
+                            <div class="row">
+                                <div class="col-md-8 align-left-m">
+                                    <a href="">Quiénes somos</a>
+                                    <a href="">Política de privacidad</a>
+                                    <a href="">PRODU locaciones</a>
+                                </div>
+                                <div class="col-md-4 align-right-m">
+                                    <div class="social-media">
+                                        <i class="fab fa-facebook"><a href=""></a></i>
+                                        <i class="fab fa-twitter"><a href=""></a></i>
+                                        <i class="fab fa-linkedin"><a href=""></a></i>
+                                        <i class="fab fa-youtube"><a href=""></a></i>
+                                    </div>
+                                    <h6>© 1997 - 2023 PRODU - Todos los derechos reservados</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+        
+
+   
+      
+
+
+    	<!----------------- Java Script ---------------------->
+        <script type="text/javascript" src="js/jquey3.5.1.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js'></script>
+        <script  src="js/script.js"></script>
+
+        <!-- Animacion Scrooll -->
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+
+        <!-- Popover -->
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();   
+            });
+        </script>
+
+        <!-- Tooltip -->
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+        </script>
+
+        <!-- Scroll top -->
+        <script type="text/javascript">
+            $('a.scroll').click(function(e){
+                e.preventDefault();
+                $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top-70}, 1000);
+            });
+        </script>
+
+        <!-- Sidenav -->
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+    
+
+        <script>
+            const botonesFiltro = document.querySelectorAll('input[data-filtro]');
+            const elementos = document.querySelectorAll('.elemento');
+
+            botonesFiltro.forEach((boton) => {
+            boton.addEventListener('click', () => {
+                const filtro = boton.getAttribute('data-filtro');
+                
+                if (filtro === 'todos') {
+                elementos.forEach((elemento) => {
+                    elemento.style.display = 'block';
+                });
+                } else {
+                elementos.forEach((elemento) => {
+                    if (elemento.getAttribute('data-categoria') === filtro) {
+                    elemento.style.display = 'block';
+                    } else {
+                    elemento.style.display = 'none';
+                    }
+                });
+                }
+            });
+            });
+
+        </script>
+
+        
+
+        
+
+    </body>
+
+</html>

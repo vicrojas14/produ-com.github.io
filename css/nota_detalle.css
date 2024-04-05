@@ -1,0 +1,118 @@
+.img-nota{
+    margin-top: -24px;
+}
+
+.video-nota{
+    margin-top: -24px;
+}
+
+.video-nota iframe{
+    width: 100% !important;
+}
+
+
+.cont-img-txr .img-not-left{
+    float: left;
+    width: 60%;
+    margin-right: 24px;
+    margin-bottom: 10px;
+}
+
+.cont-img-txr .img-not-left img{
+    width: 100%;
+}
+
+.cont-img-txr .img-not-right{
+    float: right;
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 10px;
+}
+
+.cont-img-txr .img-not-right img{
+    width: 100%;
+}
+
+.inf-nota .wp-caption-text{
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-grey-dark);
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    font-weight: 600;
+    opacity: .7;
+    background-color: #E5E5E5;
+    padding: 10px 10px;
+    font-family: 'Georgia';
+}
+
+.inf-nota  div{
+    width: 100% !important;
+}
+
+.inf-nota  div img{
+    width: 100% !important;
+    height: auto;
+}
+
+
+.inf-nota a{
+    color: #34A0D5 !important;
+}
+
+.inf-nota a:hover{
+    color: #34A0D5!important;
+    opacity: .8;
+}
+
+
+/* ============= Card who is who ============== */
+
+.card-ww{
+    background-color: #ffffff;
+    padding: 30px 20px 20px 20px;
+    margin-bottom: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+
+.card-ww .ww-persona h3{
+    margin: 0px 0px 10px 0px;
+}
+
+.card-ww .ww-persona .img-circle-ww{
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 10px auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.card-ww .ww-persona h4{
+    margin: 0px 0px 10px 0px;
+}
+
+.card-ww .ww-empresa img{
+    margin: 30px 0px 30px 0px;
+}
+
+.card-ww .ww-empresa p{
+   font-size: 14px;
+   margin: 0px 0px 10px 0px;
+}
+
+.card-ww .ww-empresa .btn-line{
+    margin: 20px 0px 10px 0px;
+ }
+
+@media (max-width: 992px){
+
+    .card-ww{
+        margin-bottom: 15px;
+    }
+
+}
+

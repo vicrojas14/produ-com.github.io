@@ -1,0 +1,138 @@
+
+/* ==========  Talentos ============ */
+
+.sec-talentos-mr{
+    background-color: #000000;
+}
+
+.sec-talentos-mr .title{
+    background-color: #1A1A1A;
+    padding: 40px 40px 180px 40px;
+    color: #ffffff;
+}
+
+
+.sec-talentos-mr .detalle{
+    margin-top: -180px;
+    padding: 0px 40px 0px 40px;
+}
+
+.sec-talentos-mr .detalle .card-detalle{
+    background-color: #000000;
+}
+
+.sec-talentos-mr .detalle .card-detalle iframe{
+    width: 100% !important;
+    height: 400px !important;
+    position: relative !important; 
+}
+
+.sec-talentos-mr .detalle .card-detalle .info{
+    padding: 40px 30px;
+    color: #ffffff;
+}
+
+.sec-talentos-mr .mas-videos{
+    padding: 0px 40px;
+}
+
+
+.card-detalle .video iframe{
+    position: relative !important; 
+    width: 100% !important;
+
+}
+
+.card-detalle .video div{
+    padding: 0px !important;
+
+}
+
+
+
+@media (max-width: 1366px){
+
+    .sec-talentos-mr .detalle .card-detalle iframe{
+        height:400px !important;
+    }
+
+}
+
+@media (max-width: 1250px){
+
+    .sec-talentos-mr .detalle .card-detalle iframe{
+        height: 350px !important;
+    }
+
+}
+
+@media (max-width: 1090px){
+
+    .sec-talentos-mr .detalle .card-detalle iframe{
+        height: 300px !important;
+    }
+
+}
+
+@media (max-width: 1100px){
+
+
+    .sec-talentos-mr .detalle .card-detalle iframe{
+        height: 340px !important;
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .sec-talentos-mr .detalle .card-detalle iframe{
+        height: 400px !important;
+    }
+
+}
+
+@media (max-width: 700px){
+
+    .sec-talentos-mr .detalle .card-detalleiframe{
+        height: 380px !important;
+    }
+
+}
+
+@media (max-width: 520px){
+
+    .card-reel-oro iframe{
+        height: 100px !important;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .sec-talentos-mr .title{
+        padding: 40px 20px 180px 20px;
+    }
+
+    .sec-talentos-mr .detalle{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .sec-talentos-mr .detalle .card-detalle .info{
+        padding: 40px 10px;
+        color: #ffffff;
+    }
+
+    .sec-talentos-mr .mas-videos{
+        padding: 0px 10px;
+    }
+    
+
+}
+
+@media (max-width: 400px){
+
+    .card-reel-oro iframe{
+        height: 100px !important;
+    }
+
+}

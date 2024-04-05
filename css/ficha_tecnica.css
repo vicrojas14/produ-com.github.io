@@ -1,0 +1,44 @@
+
+/* ========= Ficha Tecnica ========== */
+
+.cursive{
+    font-style: italic;
+}
+
+.card-ficha-p .social{
+    text-align: right;
+}
+
+.ficha-videos-fotos .align-right{
+    text-align: right;
+}
+
+.ficha-videos-fotos a:focus{
+    outline: none;
+}
+
+@media (max-width: 992px){
+
+    .card-ficha-p .social{
+        text-align: left;
+    }
+
+    .ficha-videos-fotos .align-right{
+        text-align: left;
+        margin: 0px 0px 20px 0px;
+    }
+
+
+
+
+}
+
+@media (max-width: 600px){
+
+
+    
+
+}
+
+
+
